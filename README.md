@@ -17,6 +17,8 @@ webpack --mode production
 
 Docs:
 
+Details of weather API at https://openweathermap.org/current
+
 ##### Weather API Parameters:
 
 - ```
