@@ -33,7 +33,7 @@
         function searchForLocation(location) {
             axios({
                 method: 'GET',
-                url: 'http://localhost:33473/weather/'+location,
+                url: 'http://8.142.15.127:8888/weather-service/weather/'+location,
             }).then(value => {
                 console.log(value);
                 city.innerHTML = value.data.data.name;
@@ -102,7 +102,7 @@
     </script>
 
     <div id="box1">
-        <p>Please select location: </p>
+        <p>Welcome! Please select location: </p>
         <select id="s1" onchange="searchForLocation(this.value)">
         </select>
     </div>
